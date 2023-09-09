@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace labOne
 {
-    public partial class Form1 : Form
+    public partial class labOne : Form
     {
-        public Form1()
+        public labOne()
         {
             InitializeComponent();
         }
@@ -24,6 +24,7 @@ namespace labOne
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
+            //as a continuous event, view X- and Y-values from within pictureBox to their respective listBoxes
             xText.Text = e.X.ToString("000");
             yText.Text = e.Y.ToString("000");
         }
@@ -45,8 +46,19 @@ namespace labOne
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
+            //upon mouseClick event, create string with X- and Y-values and show it in the listbox
             clickText.Text += "(" + e.X.ToString("000") + ", " + e.Y.ToString("000") + ")";
             clickText.AppendText(Environment.NewLine);
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
