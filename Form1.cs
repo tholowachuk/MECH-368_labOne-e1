@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace labOne
 {
-    public partial class Form1 : Form
+    public partial class form1 : Form
     {
-        public Form1()
+        public form1()
         {
             InitializeComponent();
         }
@@ -53,6 +53,11 @@ namespace labOne
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
